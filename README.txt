@@ -33,12 +33,15 @@ BUILD
 4. Run dist\LottoAnalyzer\LottoAnalyzer.exe.
 
 FIRST RUN
-The seed DB beside the EXE is copied to:
-  %%LOCALAPPDATA%%\LottoAnalyzer\lotto.sqlite
+The seed DB embedded in the EXE is copied to:
+  %LOCALAPPDATA%\LottoAnalyzer\lotto.sqlite
 All future weekly updates and backups use the user-data copy.
 
 DISTRIBUTION
-You may zip the entire dist\LottoAnalyzer folder. For stronger trust, sign the EXE/installer with your own Windows code-signing certificate. The private signing key is not included.
+The public package is intentionally minimal: LottoAnalyzer.exe, README.txt,
+NOTICE.txt, and SHA256SUMS.txt. Python and a separate _internal folder are not required.
+For stronger trust, sign the EXE with your own Windows code-signing certificate.
+The private signing key is not included.
 
 MOBILE
 See MOBILE_APP_PLAN.md. This package is not an Android APK; a genuine mobile app requires a separate Flutter build and Android signing.
