@@ -1,0 +1,19 @@
+[global]
+developmentMode = false
+
+[theme]
+base = "light"
+primaryColor = "#315F91"
+backgroundColor = "#DDE6F0"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#182230"
+font = "sans serif"
+
+[server]
+headless = true
+fileWatcherType = "none"
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
