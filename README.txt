@@ -1,6 +1,6 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.4
+MOBILE APP 9.5
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: PRIVACY.md
@@ -10,6 +10,12 @@ MOBILE APP 9.4
 이 공개 저장소는 모바일 앱의 개인정보처리방침·제3자 데이터 고지와
 Windows용 완성 제품을 제공합니다. Flutter 모바일 소스 코드는 비공개
 LottoAnalyzer-Source 저장소에서 별도로 관리합니다.
+
+MOBILE 9.5 UPDATE
+- 선택 조합의 1~5등 가정 횟수와 낙첨 회차·비율·최장 낙첨 구간 표시
+- 공정한 6/45 이론 확률과 과거 출현 z편차·베이지안 상대 지표를 분리 표시
+- 1천·1만·10만 조합 대량 실험과 회차 단위 순차 백테스트
+- 모든 통계·시뮬레이션은 기기 안에서 수행하며 미래 당첨을 예측하거나 보장하지 않음
 
 DEVELOPER
 - Name: 이환홍
