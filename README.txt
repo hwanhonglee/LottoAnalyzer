@@ -20,9 +20,17 @@ MOBILE 9.5 UPDATE
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Windows version: 9.3.0
+- Windows version: 9.5.0
 
-NEW IN V9.3
+NEW IN WINDOWS V9.5
+- Exact Lotto 6/45 odds shown as both percentage and 1 / N
+- Explicit historical no-win count, rate, latest win, and longest no-win streak
+- Exact binomial diagnostics with descriptive z-scores
+- Seeded 1,000 / 10,000 / 100,000-candidate simulation
+- Repeat the same seed for verification or advance to a new seed with one click
+- Simulation results describe historical comparisons and never claim future prediction
+
+FROM WINDOWS V9.3
 - Manual number selection and comma input
 - Historical 1st/2nd/3rd rule-valid combination viewer
 - Prize-tier score ranking and weighted generator
