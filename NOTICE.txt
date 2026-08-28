@@ -8,3 +8,6 @@ Copyright © 2026 이환홍. All rights reserved.
 This program is an independent personal project and is not an official application of Donghaeng Lottery.
 
 Historical statistics and generated combinations do not predict or guarantee future lottery results.
+
+QR image decoding uses zxing-cpp 3.1.1, licensed under Apache-2.0:
+https://github.com/zxing-cpp/zxing-cpp

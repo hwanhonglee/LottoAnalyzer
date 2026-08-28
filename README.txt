@@ -4,7 +4,7 @@ MOBILE APP 9.5
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: PRIVACY.md
-- 제3자 공공데이터 고지: THIRD_PARTY_NOTICES.md
+- 외부 당첨 데이터 출처 고지: THIRD_PARTY_NOTICES.md
 - 고객지원: hwanhong57@gmail.com
 
 이 공개 저장소는 모바일 앱의 개인정보처리방침·제3자 데이터 고지와
@@ -16,6 +16,8 @@ MOBILE 9.5 UPDATE
 - 내 번호를 저장 대상·최신·최근 13/52/100/300회 또는 전체 회차와 가정 비교
 - 공정한 6/45 이론 확률과 과거 출현 z편차·베이지안 상대 지표를 분리 표시
 - 1천·1만·10만 조합 대량 실험과 회차 단위 순차 백테스트
+- 동일 시드 재현·새 시드 실행, 최고 가정 등수별 분포와 복사 가능한 TOP 후보
+- 카메라 또는 QR 주소로 1~5게임을 읽어 내 번호에 로컬 저장
 - 모든 통계·시뮬레이션은 기기 안에서 수행하며 미래 당첨을 예측하거나 보장하지 않음
 
 DEVELOPER
@@ -32,6 +34,7 @@ NEW IN WINDOWS V9.5
 - Prominent top-five combination cards, copy-ready numbers, and a percentage distribution chart
 - Simulation results describe historical comparisons and never claim future prediction
 - Local saved-number list for generated and manually selected games
+- Official Lotto 6/45 QR import by camera, PNG/JPEG image, or URL
 - Target-draw, latest-draw, and recent/all historical hypothetical comparisons for every saved game
 
 WINDOWS 9.5 SIMULATION READING GUIDE
@@ -95,6 +98,6 @@ The Windows EXE is not an Android APK. The signed Android App Bundle is built an
 published separately from the private Flutter source. Mobile installation must use
 an official testing or production track rather than the Windows download below.
 
-MOBILE PRIVACY AND PUBLIC DATA
+MOBILE PRIVACY AND DATA SOURCES
 - Privacy policy: PRIVACY.md
-- Included public-data attribution and reproducible normalization record: THIRD_PARTY_NOTICES.md
+- External winning-draw data source notice: THIRD_PARTY_NOTICES.md
