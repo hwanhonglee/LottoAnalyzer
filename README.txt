@@ -26,9 +26,16 @@ NEW IN WINDOWS V9.5
 - Exact Lotto 6/45 odds shown as both percentage and 1 / N
 - Explicit historical no-win count, rate, latest win, and longest no-win streak
 - Exact binomial diagnostics with descriptive z-scores
-- Seeded 1,000 / 10,000 / 100,000-candidate simulation
-- Repeat the same seed for verification or advance to a new seed with one click
+- One-click generation and analysis of 1,000 / 10,000 / 100,000 new candidates
+- Optional advanced experiment number reproduces the identical sample for verification
+- Prominent top-five combination cards, copy-ready numbers, and a percentage distribution chart
 - Simulation results describe historical comparisons and never claim future prediction
+
+WINDOWS 9.5 SIMULATION READING GUIDE
+- The distribution chart groups each generated candidate by its single best hypothetical historical rank. A bar is a candidate count/rate, not the number of wins or the next-draw probability.
+- On one candidate card, TOP3 and 5th-or-better counts are the number of stored historical draws matched by that exact six-number combination.
+- The five highlighted games rank only within the current generated sample by historical fit. They are not purchase recommendations, future predictions, or the top five among all 8,145,060 combinations.
+- Press "Generate and analyze new candidates" for new numbers. The advanced reproducibility control is only for recreating an identical past experiment.
 
 FROM WINDOWS V9.3
 - Manual number selection and comma input
