@@ -13,6 +13,7 @@ LottoAnalyzer-Source 저장소에서 별도로 관리합니다.
 
 MOBILE 9.5 UPDATE
 - 선택 조합의 1~5등 가정 횟수와 낙첨 회차·비율·최장 낙첨 구간 표시
+- 내 번호를 저장 대상·최신·최근 13/52/100/300회 또는 전체 회차와 가정 비교
 - 공정한 6/45 이론 확률과 과거 출현 z편차·베이지안 상대 지표를 분리 표시
 - 1천·1만·10만 조합 대량 실험과 회차 단위 순차 백테스트
 - 모든 통계·시뮬레이션은 기기 안에서 수행하며 미래 당첨을 예측하거나 보장하지 않음
@@ -30,6 +31,8 @@ NEW IN WINDOWS V9.5
 - Optional advanced experiment number reproduces the identical sample for verification
 - Prominent top-five combination cards, copy-ready numbers, and a percentage distribution chart
 - Simulation results describe historical comparisons and never claim future prediction
+- Local saved-number list for generated and manually selected games
+- Target-draw, latest-draw, and recent/all historical hypothetical comparisons for every saved game
 
 WINDOWS 9.5 SIMULATION READING GUIDE
 - The distribution chart groups each generated candidate by its single best hypothetical historical rank. A bar is a candidate count/rate, not the number of wins or the next-draw probability.
@@ -70,6 +73,14 @@ FIRST RUN
 The seed DB embedded in the EXE is copied to:
   %LOCALAPPDATA%\LottoAnalyzer\lotto.sqlite
 All future weekly updates and backups use the user-data copy.
+
+SAVED NUMBERS
+Saved combinations are stored separately in:
+  %LOCALAPPDATA%\LottoAnalyzer\user.sqlite
+Replacing LottoAnalyzer.exe does not remove them. The app shows the target draw,
+latest draw, best historical rank, rank counts, and no-win rate. These are
+hypothetical comparisons, not proof of purchase or prize receipt. Windows and
+mobile store their lists locally on each device and do not automatically sync.
 
 DISTRIBUTION
 The downloadable Windows package is intentionally minimal: LottoAnalyzer.exe,
