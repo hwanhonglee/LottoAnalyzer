@@ -1,6 +1,6 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.6.1
+MOBILE APP 9.6.2
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: PRIVACY.md
@@ -10,6 +10,14 @@ MOBILE APP 9.6.1
 이 공개 저장소는 모바일 앱의 개인정보처리방침·제3자 데이터 고지와
 Windows용 완성 제품을 제공합니다. Flutter 모바일 소스 코드는 비공개
 LottoAnalyzer-Source 저장소에서 별도로 관리합니다.
+
+MOBILE 9.6.2 UPDATE
+- 홈·분석·생성·검증·내 번호의 5개 핵심 화면으로 Android·iPhone 탐색 구조 통일
+- 회차 조회는 분석으로, QR과 저장 번호는 내 번호로 모아 중복 진입 제거
+- n+1 모델 검증과 검증 결론 적용 생성을 기본 흐름으로 배치
+- 과거 대입·균등성·대량 후보·전수검사는 접힌 고급 연구 도구로 분리
+- 낙첨과 1~5등·1~3등 규칙 일치 횟수를 구분해 결과 용어를 명확히 표시
+- 좁은 화면과 큰 글자에서도 분석 막대와 주요 화면이 겹치지 않도록 개선
 
 MOBILE 9.6.1 UPDATE
 - 45개 번호의 다음 회차 확률을 Brier 점수와 로그 손실로 직접 검증
@@ -28,7 +36,15 @@ MOBILE 9.6.1 UPDATE
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Windows version: 9.6.1
+- Windows version: 9.6.2
+
+NEW IN WINDOWS V9.6.2
+- Organizes the app into Home, Analysis, Number Generation, Validation & Simulation, My Numbers & QR, and Settings & Information
+- Keeps n+1 validation and validation-based generation in the primary flow
+- Places uniformity diagnostics, bulk-candidate comparison, and exhaustive historical research under optional advanced tools
+- Moves draw lookup under Analysis and QR import plus one-line historical comparison under My Numbers & QR
+- Uses explicit hypothetical-result terms for no prize, ranks 1-5, and 1st-3rd prize rule matches
+- Preserves automatic/manual generation, local saved numbers, QR import, and target/latest/recent/all-draw comparisons
 
 NEW IN WINDOWS V9.6.1
 - Directly scores each model's 45 next-draw number probabilities with Brier score and log loss
@@ -52,11 +68,11 @@ FROM WINDOWS V9.5
 - Official Lotto 6/45 QR import by camera, PNG/JPEG image, or URL
 - Target-draw, latest-draw, and recent/all historical hypothetical comparisons for every saved game
 
-WINDOWS SIMULATION READING GUIDE
-- Recommended workflow: open Simulation Lab, run the default n+1 validation, read the conclusion, then use "Generate 5 lines from validated settings" and save the lines.
+WINDOWS VALIDATION & SIMULATION READING GUIDE
+- Recommended workflow: open Validation & Simulation, run the default n+1 validation, read the conclusion, then use "Generate 5 lines from the validation conclusion" and save the lines.
 - Only the fixed default validation can enable validated generation. Results from changed custom settings are exploratory comparisons.
 - The distribution chart groups each generated candidate by its single best hypothetical historical rank. A bar is a candidate count/rate, not the number of wins or the next-draw probability.
-- On one candidate card, TOP3 and 5th-or-better counts are the number of stored historical draws matched by that exact six-number combination.
+- On one candidate card, 1st-3rd rule-match and 1st-5th rule-match counts are the number of stored historical draws matched by that exact six-number combination.
 - The five highlighted games rank only within the current generated sample by historical fit. They are not purchase recommendations, future predictions, or the top five among all 8,145,060 combinations.
 - Press "Generate and analyze new candidates" for new numbers. The advanced reproducibility control is only for recreating an identical past experiment.
 
