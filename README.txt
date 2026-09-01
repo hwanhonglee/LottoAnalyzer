@@ -1,6 +1,6 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.5
+MOBILE APP 9.6.1
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: PRIVACY.md
@@ -11,7 +11,12 @@ MOBILE APP 9.5
 Windows용 완성 제품을 제공합니다. Flutter 모바일 소스 코드는 비공개
 LottoAnalyzer-Source 저장소에서 별도로 관리합니다.
 
-MOBILE 9.5 UPDATE
+MOBILE 9.6.1 UPDATE
+- 45개 번호의 다음 회차 확률을 Brier 점수와 로그 손실로 직접 검증
+- 전체 과거 회차를 순차 학습하는 7개 고정 모델과 균등 모델 비교
+- 검증을 모두 통과한 규칙이 없으면 공정한 균등 확률 모델을 자동 유지
+- 검증된 규칙으로 5줄을 생성하고 내 번호 저장·목표 회차 비교까지 연결
+- 다른 곳에서 만든 번호 묶음의 쏠림·중복·번호 범위·조합 겹침 진단
 - 선택 조합의 1~5등 가정 횟수와 낙첨 회차·비율·최장 낙첨 구간 표시
 - 내 번호를 저장 대상·최신·최근 13/52/100/300회 또는 전체 회차와 가정 비교
 - 공정한 6/45 이론 확률과 과거 출현 z편차·베이지안 상대 지표를 분리 표시
@@ -23,9 +28,19 @@ MOBILE 9.5 UPDATE
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Windows version: 9.5.0
+- Windows version: 9.6.1
 
-NEW IN WINDOWS V9.5
+NEW IN WINDOWS V9.6.1
+- Directly scores each model's 45 next-draw number probabilities with Brier score and log loss
+- Uses fixed full-history walk-forward validation across seven models; custom settings remain exploratory
+- Applies conservative minimum-history, multiple-comparison, log-loss, and recent-stability gates
+- Falls back automatically to equal-probability generation when no non-uniform model passes every gate
+- Generates five low-overlap lines from the validated rule and connects them to local save and target-draw comparison
+- Keeps validation independent of candidate count and random seed
+- Shows periods as months or years and keeps detailed research explanations collapsed by default
+- Aligns the desktop and mobile validation and generation workflow
+
+FROM WINDOWS V9.5
 - Exact Lotto 6/45 odds shown as both percentage and 1 / N
 - Explicit historical no-win count, rate, latest win, and longest no-win streak
 - Exact binomial diagnostics with descriptive z-scores
@@ -37,7 +52,9 @@ NEW IN WINDOWS V9.5
 - Official Lotto 6/45 QR import by camera, PNG/JPEG image, or URL
 - Target-draw, latest-draw, and recent/all historical hypothetical comparisons for every saved game
 
-WINDOWS 9.5 SIMULATION READING GUIDE
+WINDOWS SIMULATION READING GUIDE
+- Recommended workflow: open Simulation Lab, run the default n+1 validation, read the conclusion, then use "Generate 5 lines from validated settings" and save the lines.
+- Only the fixed default validation can enable validated generation. Results from changed custom settings are exploratory comparisons.
 - The distribution chart groups each generated candidate by its single best hypothetical historical rank. A bar is a candidate count/rate, not the number of wins or the next-draw probability.
 - On one candidate card, TOP3 and 5th-or-better counts are the number of stored historical draws matched by that exact six-number combination.
 - The five highlighted games rank only within the current generated sample by historical fit. They are not purchase recommendations, future predictions, or the top five among all 8,145,060 combinations.
