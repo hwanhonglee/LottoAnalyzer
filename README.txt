@@ -1,6 +1,6 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.6.2
+MOBILE APP 9.7.0
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: PRIVACY.md
@@ -10,6 +10,13 @@ MOBILE APP 9.6.2
 이 공개 저장소는 모바일 앱의 개인정보처리방침·제3자 데이터 고지와
 Windows용 완성 제품을 제공합니다. Flutter 모바일 소스 코드는 비공개
 LottoAnalyzer-Source 저장소에서 별도로 관리합니다.
+
+MOBILE 9.7.0 UPDATE
+- 분석·번호 생성·검증 및 시뮬레이션을 목적별 화면으로 정리
+- 8,145,060개 전체 조합의 구조를 정확히 계산해 가장 흔한 구조 유형에서 기본 번호 생성
+- 모든 고정 6개 조합의 1등 이론 확률은 동일함을 명시하고 미래 당첨 예측으로 표현하지 않음
+- 저장 번호를 목표 회차·최신 회차·최근 기간·전체 회차와 비교해 낙첨 또는 가정 등수 확인
+- Android와 iPhone에서 핵심 분석·생성·시뮬레이션·내 번호 흐름을 동일하게 제공
 
 MOBILE 9.6.2 UPDATE
 - 홈·분석·생성·검증·내 번호의 5개 핵심 화면으로 Android·iPhone 탐색 구조 통일
@@ -36,7 +43,14 @@ MOBILE 9.6.1 UPDATE
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Windows version: 9.6.2
+- Windows version: 9.7.0
+
+NEW IN WINDOWS V9.7.0
+- Separates analysis, generation, and validation/simulation into clear primary workflows
+- Generates default lines from the exact modal structural class found across all 8,145,060 combinations
+- States that every fixed six-number line retains the same theoretical first-prize probability
+- Checks saved lines against a target draw, the latest draw, recent periods, or the full history
+- Keeps the core analysis, generation, simulation, QR, and saved-number experience aligned with mobile
 
 NEW IN WINDOWS V9.6.2
 - Organizes the app into Home, Analysis, Number Generation, Validation & Simulation, My Numbers & QR, and Settings & Information
@@ -120,7 +134,8 @@ mobile store their lists locally on each device and do not automatically sync.
 
 DISTRIBUTION
 The downloadable Windows package is intentionally minimal: LottoAnalyzer.exe,
-README.txt, NOTICE.txt, and SHA256SUMS.txt. Python and a separate _internal folder
+README.txt, NOTICE.txt, SHA256SUMS.txt, verify_program_integrity.ps1, and
+verify_program_integrity.bat. Python and a separate _internal folder
 are not required. This repository additionally keeps PRIVACY.md and
 THIRD_PARTY_NOTICES.md as public web documents for the mobile app.
 For stronger trust, sign the EXE with your own Windows code-signing certificate.
