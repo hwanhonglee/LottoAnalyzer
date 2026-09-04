@@ -1,6 +1,6 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.7.0
+MOBILE APP 9.8.0
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: PRIVACY.md
@@ -10,6 +10,12 @@ MOBILE APP 9.7.0
 이 공개 저장소는 모바일 앱의 개인정보처리방침·제3자 데이터 고지와
 Windows용 완성 제품을 제공합니다. Flutter 모바일 소스 코드는 비공개
 LottoAnalyzer-Source 저장소에서 별도로 관리합니다.
+
+MOBILE 9.8.0 UPDATE
+- 조합 구조·기간 흐름·최근 흐름을 함께 요약한 전체 데이터 적합도 점수 추가
+- 모든 유효 조합의 선택 가능성은 유지하면서 점수가 높은 후보를 우선하는 기본 생성 적용
+- 점수와 등급은 과거 데이터 적합도의 설명값이며 미래 당첨확률이나 당첨 예측이 아님을 명확히 표시
+- 각 화면의 목적을 짧게 안내하고 긴 원리와 주의사항은 사용자가 펼칠 때만 표시
 
 MOBILE 9.7.0 UPDATE
 - 분석·번호 생성·검증 및 시뮬레이션을 목적별 화면으로 정리
@@ -43,7 +49,13 @@ MOBILE 9.6.1 UPDATE
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Windows version: 9.7.0
+- Windows version: 9.8.0
+
+NEW IN WINDOWS V9.8.0
+- Adds an overall historical data-fit score with concise combination-structure, period-flow, and recent-flow summaries
+- Makes score-prioritized generation the default while keeping every valid combination selectable and reducing overlap across generated lines
+- Shows the score and descriptive grade without presenting historical fit as a prediction or a higher future winning probability
+- Gives each main screen a clear purpose and keeps longer explanations collapsed until the user opens them
 
 NEW IN WINDOWS V9.7.0
 - Separates analysis, generation, and validation/simulation into clear primary workflows
