@@ -1,108 +1,84 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.8.0
+MOBILE APP 9.8.1
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
-- 개인정보처리방침: PRIVACY.md
-- 외부 당첨 데이터 출처 고지: THIRD_PARTY_NOTICES.md
+- 개인정보처리방침: 공개 저장소의 PRIVACY.md
+- 외부 당첨 데이터 출처: 공개 저장소의 THIRD_PARTY_NOTICES.md
 - 고객지원: hwanhong57@gmail.com
 
-이 공개 저장소는 모바일 앱의 개인정보처리방침·제3자 데이터 고지와
-Windows용 완성 제품을 제공합니다. Flutter 모바일 소스 코드는 비공개
-LottoAnalyzer-Source 저장소에서 별도로 관리합니다.
+이 공개 저장소는 모바일 앱의 개인정보처리방침·제3자 데이터 고지와 Windows용
+완성 제품을 제공합니다. Flutter 모바일 소스는 비공개 LottoAnalyzer-Source
+저장소에서 별도로 관리합니다.
 
-MOBILE 9.8.0 UPDATE
-- 조합 구조·기간 흐름·최근 흐름을 함께 요약한 전체 데이터 적합도 점수 추가
-- 모든 유효 조합의 선택 가능성은 유지하면서 점수가 높은 후보를 우선하는 기본 생성 적용
-- 점수와 등급은 과거 데이터 적합도의 설명값이며 미래 당첨확률이나 당첨 예측이 아님을 명확히 표시
-- 각 화면의 목적을 짧게 안내하고 긴 원리와 주의사항은 사용자가 펼칠 때만 표시
-
-MOBILE 9.7.0 UPDATE
-- 분석·번호 생성·검증 및 시뮬레이션을 목적별 화면으로 정리
-- 8,145,060개 전체 조합의 구조를 정확히 계산해 가장 흔한 구조 유형에서 기본 번호 생성
-- 모든 고정 6개 조합의 1등 이론 확률은 동일함을 명시하고 미래 당첨 예측으로 표현하지 않음
-- 저장 번호를 목표 회차·최신 회차·최근 기간·전체 회차와 비교해 낙첨 또는 가정 등수 확인
-- Android와 iPhone에서 핵심 분석·생성·시뮬레이션·내 번호 흐름을 동일하게 제공
-
-MOBILE 9.6.2 UPDATE
-- 홈·분석·생성·검증·내 번호의 5개 핵심 화면으로 Android·iPhone 탐색 구조 통일
-- 회차 조회는 분석으로, QR과 저장 번호는 내 번호로 모아 중복 진입 제거
-- n+1 모델 검증과 검증 결론 적용 생성을 기본 흐름으로 배치
-- 과거 대입·균등성·대량 후보·전수검사는 접힌 고급 연구 도구로 분리
-- 낙첨과 1~5등·1~3등 규칙 일치 횟수를 구분해 결과 용어를 명확히 표시
-- 좁은 화면과 큰 글자에서도 분석 막대와 주요 화면이 겹치지 않도록 개선
-
-MOBILE 9.6.1 UPDATE
-- 45개 번호의 다음 회차 확률을 Brier 점수와 로그 손실로 직접 검증
-- 전체 과거 회차를 순차 학습하는 7개 고정 모델과 균등 모델 비교
-- 검증을 모두 통과한 규칙이 없으면 공정한 균등 확률 모델을 자동 유지
-- 검증된 규칙으로 5줄을 생성하고 내 번호 저장·목표 회차 비교까지 연결
-- 다른 곳에서 만든 번호 묶음의 쏠림·중복·번호 범위·조합 겹침 진단
-- 선택 조합의 1~5등 가정 횟수와 낙첨 회차·비율·최장 낙첨 구간 표시
-- 내 번호를 저장 대상·최신·최근 13/52/100/300회 또는 전체 회차와 가정 비교
-- 공정한 6/45 이론 확률과 과거 출현 z편차·베이지안 상대 지표를 분리 표시
-- 1천·1만·10만 조합 대량 실험과 회차 단위 순차 백테스트
-- 동일 시드 재현·새 시드 실행, 최고 가정 등수별 분포와 복사 가능한 TOP 후보
-- 카메라 또는 QR 주소로 1~5게임을 읽어 내 번호에 로컬 저장
-- 모든 통계·시뮬레이션은 기기 안에서 수행하며 미래 당첨을 예측하거나 보장하지 않음
+MOBILE 9.8.1 UPDATE
+- 전체 데이터 점수로 선택한 각 조합에 선정 근거를 추가
+- 합계·홀짝·번호대·연속수·끝수·AC·소수·3의 배수·번호 폭의 실제값과 적합도를 표시
+- 장·단기 본번호, 보너스, 미출현 간격, 최근 번호대 전이의 판단 자료를 표시
+- 실제 생성 조건과 선정 당시 참고 기간을 기록하고, 수동·QR 번호의 사후 평가와 구분
+- 점수가 백분위나 미래 당첨확률이 아니며 모든 고정 조합의 1등 이론 확률은 같음을 명확히 표시
 
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Windows version: 9.8.0
+- Version: 9.8.1
 
-NEW IN WINDOWS V9.8.0
-- Adds an overall historical data-fit score with concise combination-structure, period-flow, and recent-flow summaries
-- Makes score-prioritized generation the default while keeping every valid combination selectable and reducing overlap across generated lines
-- Shows the score and descriptive grade without presenting historical fit as a prediction or a higher future winning probability
-- Gives each main screen a clear purpose and keeps longer explanations collapsed until the user opens them
+NEW IN V9.8.1
+- Explain why each score-prioritized line was selected instead of showing only a total score
+- Show the actual values and qualitative fit for nine structural criteria: sum, odd/even, number/color bands, consecutive numbers, endings, AC, primes, multiples of three, and span
+- Show the four supporting flow checks for multi-period main numbers, bonus numbers, current absence gaps, and recent band transitions
+- Record the generation conditions and distinguish score-driven selection from a reference-only evaluation of manual, QR, or other generated numbers
+- Keep private weights and formulas out of the public interface while stating that the score is historical fit, not a future winning probability
 
-NEW IN WINDOWS V9.7.0
-- Separates analysis, generation, and validation/simulation into clear primary workflows
-- Generates default lines from the exact modal structural class found across all 8,145,060 combinations
-- States that every fixed six-number line retains the same theoretical first-prize probability
-- Checks saved lines against a target draw, the latest draw, recent periods, or the full history
-- Keeps the core analysis, generation, simulation, QR, and saved-number experience aligned with mobile
+NEW IN V9.8.0
+- Add an overall historical data-fit score with concise combination-structure, period-flow, and recent-flow summaries
+- Make score-prioritized generation the default while keeping every valid combination selectable and reducing overlap across generated lines
+- Show the score and descriptive grade without presenting historical fit as a prediction or a higher future winning probability
+- Give each main screen a clear purpose and keep longer explanations collapsed until the user opens them
 
-NEW IN WINDOWS V9.6.2
-- Organizes the app into Home, Analysis, Number Generation, Validation & Simulation, My Numbers & QR, and Settings & Information
-- Keeps n+1 validation and validation-based generation in the primary flow
-- Places uniformity diagnostics, bulk-candidate comparison, and exhaustive historical research under optional advanced tools
-- Moves draw lookup under Analysis and QR import plus one-line historical comparison under My Numbers & QR
-- Uses explicit hypothetical-result terms for no prize, ranks 1-5, and 1st-3rd prize rule matches
-- Preserves automatic/manual generation, local saved numbers, QR import, and target/latest/recent/all-draw comparisons
+NEW IN V9.7.0
+- Compare number frequencies and five number bands with the exact uniform-draw expectation and descriptive z deviations
+- Separate the custom 1-9/10-19/20-29/30-39/40-45 number bands from the official Lotto ball-color ranges
+- Show exact structural distributions, observed-versus-theoretical band patterns, streaks, half-period changes, and vector transitions
+- Evaluate sum, odd/even, band pattern, adjacent pairs, endings, AC, primes, multiples of three, and span with a descriptive structural-commonness index
+- Exhaustively group all 8,145,060 combinations across nine structural fields and make the 70 combinations in the unique modal joint structure the default generation pool on PC, Android, and iOS
+- Clearly preserve equal 1-in-8,145,060 first-prize odds for every fixed six-number combination; the structural score is descriptive, not predictive
+- Allow an optional exact number-band vector such as 1-2-1-1-1, with impossible fixed/excluded settings rejected before generation
+- Add exact-theory band generation, exploratory recent-band weighting, and a fixed 3-month/6-month/1-year/2-year/all-history blend
+- Add optional band constraints for minimum occupied bands, maximum numbers per band, minimum 40s, and maximum single-digit numbers
+- Add collapsed per-draw vectors, top vector transitions, linear band trends, and fair geometric waiting-time references to Analysis
+- Add leakage-free auxiliary band checks to walk-forward validation: expected-vector L1 distance, occupied-band-count accuracy, and categorical-vector Brier score
 
-NEW IN WINDOWS V9.6.1
-- Directly scores each model's 45 next-draw number probabilities with Brier score and log loss
-- Uses fixed full-history walk-forward validation across seven models; custom settings remain exploratory
-- Applies conservative minimum-history, multiple-comparison, log-loss, and recent-stability gates
-- Falls back automatically to equal-probability generation when no non-uniform model passes every gate
-- Generates five low-overlap lines from the validated rule and connects them to local save and target-draw comparison
-- Keeps validation independent of candidate count and random seed
-- Shows periods as months or years and keeps detailed research explanations collapsed by default
-- Aligns the desktop and mobile validation and generation workflow
+NEW IN V9.6.2
+- Organize the PC, Android, and iOS experience around Analysis, Number Generation, Validation & Simulation, and My Numbers & QR
+- Keep n+1 model validation in the primary flow while placing uniformity, bulk-candidate, and exhaustive historical research under optional advanced details
+- Distinguish model-validation ranking, historical candidate ranking, and best hypothetical historical prize tier (1st-5th/no prize); none is a future winning-probability ranking or proof of purchase
+- Connect generated, manually selected, and QR-imported combinations to local My Numbers and target/latest/recent/all-draw comparisons
 
-FROM WINDOWS V9.5
-- Exact Lotto 6/45 odds shown as both percentage and 1 / N
-- Explicit historical no-win count, rate, latest win, and longest no-win streak
-- Exact binomial diagnostics with descriptive z-scores
-- One-click generation and analysis of 1,000 / 10,000 / 100,000 new candidates
-- Optional advanced experiment number reproduces the identical sample for verification
-- Prominent top-five combination cards, copy-ready numbers, and a percentage distribution chart
-- Simulation results describe historical comparisons and never claim future prediction
-- Local saved-number list for generated and manually selected games
-- Official Lotto 6/45 QR import by camera, PNG/JPEG image, or URL
-- Target-draw, latest-draw, and recent/all historical hypothetical comparisons for every saved game
+NEW IN V9.6.1
+- Score each model's 45 next-draw number probabilities directly with Brier score and log loss, without candidate-sampling noise
+- Keep model validation independent of candidate count and random seed; candidate-match experiments remain optional advanced research
+- Use a conservative model gate: at least 260 evaluation draws, Bonferroni-adjusted Brier improvement, lower log loss, and no recent 104-draw degradation
+- Fall back automatically to the equal-probability model when no non-uniform model passes every validation condition
+- Generate five lines from the validated rule and pass them into the existing local save and target-draw comparison flow
+- Default to full-history validation, show periods as months/years, and keep detailed research text collapsed
+- Align the desktop and mobile product-weight probability model while keeping equal-probability random generation as the default
 
-WINDOWS VALIDATION & SIMULATION READING GUIDE
-- Recommended workflow: open Validation & Simulation, run the default n+1 validation, read the conclusion, then use "Generate 5 lines from the validation conclusion" and save the lines.
-- Only the fixed default validation can enable validated generation. Results from changed custom settings are exploratory comparisons.
-- The distribution chart groups each generated candidate by its single best hypothetical historical rank. A bar is a candidate count/rate, not the number of wins or the next-draw probability.
-- On one candidate card, 1st-3rd rule-match and 1st-5th rule-match counts are the number of stored historical draws matched by that exact six-number combination.
-- The five highlighted games rank only within the current generated sample by historical fit. They are not purchase recommendations, future predictions, or the top five among all 8,145,060 combinations.
-- Press "Generate and analyze new candidates" for new numbers. The advanced reproducibility control is only for recreating an identical past experiment.
+NEW IN V9.6
+- Explicit no-win count, rate, last historical win, and longest no-win streak
+- Exact theoretical Lotto 6/45 odds and per-number distribution diagnostics
+- Seeded 1,000 / 10,000 / 100,000-candidate bulk simulation
+- Memory-bounded exhaustive historical analysis of all 8,145,060 combinations
+- Separate views for my-number history, external batch uniformity diagnostics, historical-fit bulk comparison, and n+1 model validation
+- Leakage-free n+1 walk-forward comparison against a uniform baseline with paired 95% intervals
+- External batch checks show concentration, duplicates, coverage, and overlap without presenting them as future prediction scores
+- Clear result verdicts: no detected advantage, exploratory improvement, or below uniform
+- Save generated or manually selected numbers in a separate local user.sqlite database
+- Import 1~5 games from an official Lotto 6/45 QR by camera, PNG/JPEG image, or URL
+- Compare saved numbers with their target draw, the latest draw, and recent/all historical draws
+- Show best hypothetical rank, rank counts, no-win count, and no-win rate for every saved game
 
-FROM WINDOWS V9.3
+FROM V9.3
 - Manual number selection and comma input
 - Historical 1st/2nd/3rd rule-valid combination viewer
 - Prize-tier score ranking and weighted generator
@@ -125,11 +101,10 @@ NEW FEATURES
 - Secure updater with HTTPS allowlist, TLS verification, strict JSON validation, response-size limits, backup, transaction, and SQLite integrity checks
 - User DB is migrated to %%LOCALAPPDATA%%\LottoAnalyzer
 
-WINDOWS 실행
-1. 공개 배포 파일을 같은 폴더에 내려받습니다.
-2. LottoAnalyzer.exe를 실행합니다.
-
-빌더와 원본 소스는 이 공개 저장소에 포함하지 않습니다.
+RUN
+1. Keep LottoAnalyzer.exe, NOTICE.txt, README.txt, SHA256SUMS.txt, and the integrity-check files together.
+2. Optionally run verify_program_integrity.bat before first use.
+3. Double-click LottoAnalyzer.exe.
 
 FIRST RUN
 The seed DB embedded in the EXE is copied to:
@@ -137,27 +112,27 @@ The seed DB embedded in the EXE is copied to:
 All future weekly updates and backups use the user-data copy.
 
 SAVED NUMBERS
-Saved combinations are stored separately in:
+Saved numbers are kept separately in:
   %LOCALAPPDATA%\LottoAnalyzer\user.sqlite
-Replacing LottoAnalyzer.exe does not remove them. The app shows the target draw,
-latest draw, best historical rank, rank counts, and no-win rate. These are
-hypothetical comparisons, not proof of purchase or prize receipt. Windows and
-mobile store their lists locally on each device and do not automatically sync.
+They remain after replacing the EXE. Target/latest/history results are hypothetical
+comparisons against published winning numbers, not proof of purchase or prize receipt.
+QR images and original QR text are used only for local parsing and are not retained;
+only the validated draw number and six-number games are saved when the user confirms.
 
 DISTRIBUTION
-The downloadable Windows package is intentionally minimal: LottoAnalyzer.exe,
-README.txt, NOTICE.txt, SHA256SUMS.txt, verify_program_integrity.ps1, and
-verify_program_integrity.bat. Python and a separate _internal folder
-are not required. This repository additionally keeps PRIVACY.md and
-THIRD_PARTY_NOTICES.md as public web documents for the mobile app.
+The public package is intentionally minimal: LottoAnalyzer.exe, README.txt,
+NOTICE.txt, SHA256SUMS.txt, and the two verify_program_integrity scripts. Python and
+a separate _internal folder are not required. Run verify_program_integrity.bat to
+check every listed file before first launch.
 For stronger trust, sign the EXE with your own Windows code-signing certificate.
 The private signing key is not included.
 
 MOBILE
-The Windows EXE is not an Android APK. The signed Android App Bundle is built and
-published separately from the private Flutter source. Mobile installation must use
-an official testing or production track rather than the Windows download below.
+The Windows EXE is not an Android APK. Android and iOS builds are produced from
+the shared private Flutter source. Install Android builds only from an official
+Google Play testing or production track; iOS publishing uses the prepared Xcode
+archive on macOS and App Store Connect.
 
 MOBILE PRIVACY AND DATA SOURCES
-- Privacy policy: PRIVACY.md
-- External winning-draw data source notice: THIRD_PARTY_NOTICES.md
+- Privacy policy: PRIVACY.md in the public repository
+- External winning-draw data source notice: THIRD_PARTY_NOTICES.md in the public repository
