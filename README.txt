@@ -1,6 +1,6 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.8.1
+MOBILE APP 9.8.2
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: 공개 저장소의 PRIVACY.md
@@ -11,17 +11,23 @@ MOBILE APP 9.8.1
 완성 제품을 제공합니다. Flutter 모바일 소스는 비공개 LottoAnalyzer-Source
 저장소에서 별도로 관리합니다.
 
-MOBILE 9.8.1 UPDATE
-- 전체 데이터 점수로 선택한 각 조합에 선정 근거를 추가
-- 합계·홀짝·번호대·연속수·끝수·AC·소수·3의 배수·번호 폭의 실제값과 적합도를 표시
-- 장·단기 본번호, 보너스, 미출현 간격, 최근 번호대 전이의 판단 자료를 표시
-- 실제 생성 조건과 선정 당시 참고 기간을 기록하고, 수동·QR 번호의 사후 평가와 구분
-- 점수가 백분위나 미래 당첨확률이 아니며 모든 고정 조합의 1등 이론 확률은 같음을 명확히 표시
+MOBILE 9.8.2 UPDATE
+- 전체 데이터 점수 후보 1,200개 중 적합도 상위 20%를 통과한 조합만 기본 생성에 사용
+- 각 조합에 후보풀 순위·백분위와 통과 기준을 표시
+- 접힌 상세정보에서 적합도·비용·구조·기간·최근 흐름, 9개 구조 기준과 4개 흐름 기준을 표시
+- 과거 회차 대입의 최고 가정 등수·5등 이상·낙첨 횟수를 참고 정보로 표시
+- 점수·비용·후보풀 백분위가 미래 당첨확률이 아님을 명확히 구분
 
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Version: 9.8.1
+- Version: 9.8.2
+
+NEW IN V9.8.2
+- Score 1,200 valid proposals and admit only the top 20 percent before diverse batch selection
+- Show each selected line's candidate-pool rank and percentile together with its score and complementary cost
+- Keep structure, period flow, recent flow, nine structural checks, four flow checks, and historical comparison inside an expandable rationale
+- Label all descriptive scores separately from theoretical future winning odds
 
 NEW IN V9.8.1
 - Explain why each score-prioritized line was selected instead of showing only a total score
