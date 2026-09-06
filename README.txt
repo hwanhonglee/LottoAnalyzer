@@ -12,6 +12,8 @@ MOBILE APP 9.8.2
 저장소에서 별도로 관리합니다.
 
 MOBILE 9.8.2 UPDATE
+- 둥근 카드와 파스텔 색상, 알약형 메뉴로 PC·Android·iOS 화면을 통일
+- 작은 화면과 큰 글자에서도 핵심 값이 잘리지 않도록 반응형 레이아웃을 개선
 - 전체 데이터 점수 후보 1,200개 중 적합도 상위 20%를 통과한 조합만 기본 생성에 사용
 - 각 조합에 후보풀 순위·백분위와 통과 기준을 표시
 - 접힌 상세정보에서 적합도·비용·구조·기간·최근 흐름, 9개 구조 기준과 4개 흐름 기준을 표시
@@ -24,6 +26,8 @@ DEVELOPER
 - Version: 9.8.2
 
 NEW IN V9.8.2
+- Refresh the PC, Android, and iOS interface with rounded cards, pastel accents, and pill-style navigation
+- Improve responsive layouts for narrow screens and larger accessibility text
 - Score 1,200 valid proposals and admit only the top 20 percent before diverse batch selection
 - Show each selected line's candidate-pool rank and percentile together with its score and complementary cost
 - Keep structure, period flow, recent flow, nine structural checks, four flow checks, and historical comparison inside an expandable rationale
