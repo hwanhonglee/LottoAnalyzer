@@ -1,6 +1,6 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.8.2
+MOBILE APP 9.8.3
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: 공개 저장소의 PRIVACY.md
@@ -11,9 +11,12 @@ MOBILE APP 9.8.2
 완성 제품을 제공합니다. Flutter 모바일 소스는 비공개 LottoAnalyzer-Source
 저장소에서 별도로 관리합니다.
 
+MOBILE 9.8.3 UPDATE
+- 둥근 카드·알약형 메뉴와 파스텔 색상으로 Windows·Android·iOS 화면을 통일
+- 분석·번호 생성·과거 모의검증·내 번호/QR의 핵심 동선을 더 또렷하게 정리
+- 작은 화면과 큰 글자 환경에서도 메뉴와 결과를 읽기 쉽도록 반응형 화면을 개선
+
 MOBILE 9.8.2 UPDATE
-- 둥근 카드와 파스텔 색상, 알약형 메뉴로 PC·Android·iOS 화면을 통일
-- 작은 화면과 큰 글자에서도 핵심 값이 잘리지 않도록 반응형 레이아웃을 개선
 - 전체 데이터 점수 후보 1,200개 중 적합도 상위 20%를 통과한 조합만 기본 생성에 사용
 - 각 조합에 후보풀 순위·백분위와 통과 기준을 표시
 - 접힌 상세정보에서 적합도·비용·구조·기간·최근 흐름, 9개 구조 기준과 4개 흐름 기준을 표시
@@ -23,11 +26,14 @@ MOBILE 9.8.2 UPDATE
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Version: 9.8.2
+- Version: 9.8.3
+
+NEW IN V9.8.3
+- Refresh Windows, Android, and iOS with rounded cards, pill navigation, and a soft pastel palette
+- Clarify the primary flows for analysis, number generation, historical validation, and local number/QR management
+- Improve responsive layouts, focus visibility, and readability on small screens and with larger text
 
 NEW IN V9.8.2
-- Refresh the PC, Android, and iOS interface with rounded cards, pastel accents, and pill-style navigation
-- Improve responsive layouts for narrow screens and larger accessibility text
 - Score 1,200 valid proposals and admit only the top 20 percent before diverse batch selection
 - Show each selected line's candidate-pool rank and percentile together with its score and complementary cost
 - Keep structure, period flow, recent flow, nine structural checks, four flow checks, and historical comparison inside an expandable rationale

@@ -1,4 +1,4 @@
-Lotto Analyzer 9.8.2
+Lotto Analyzer 9.8.3
 
 Developed by 이환홍
 Contact: hwanhong57@gmail.com
