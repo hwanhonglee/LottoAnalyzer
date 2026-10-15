@@ -1,6 +1,32 @@
 육사오 데이터랩 공개 배포 및 고객지원
 
-MOBILE APP 9.8.3
+WINDOWS APP 9.9.4
+NEW IN 9.9.4
+- Windows: 왼쪽 위 '도움말'에서 사용법과 계산 설명을 옆 패널로 확인합니다.
+- 모바일: 화면 상단 '도움말'에서 설명을 읽고 기존 입력 화면으로 돌아갑니다.
+- 긴 안내를 모아 분석·생성·검증 화면을 간결하게 정리했습니다.
+
+- 큰 글씨로 보기, 줄바꿈 메뉴, 기본 접힘 사용 안내로 접근성을 개선했습니다.
+- 당첨번호 점수·순위 검증: 1천·1만·10만·100만·전체 8,145,060개 비교 (기존 1,200개 유지)
+- 100만·전체는 분할 계산 및 진행률 제공. 대규모 후보 수는 검증 전용이며 매우 오래 걸릴 수 있습니다.
+- 생성한 번호 묶음이 덮는 1~3등 본번호 조합을 최대 100줄까지 정확히 계산
+- 중복·유사 조합을 반영한 범위 효율과 같은 줄 수의 무작위 고유 조합 평균을 비교
+- 목표 이론값별 평균 줄 수와 1줄 1,000원 단순 환산액을 표시하되 구매 권장이나 예측값과 구분
+- 분석의 기준 설명, 과거 모의검증의 모델 성능·당첨번호 점수 위치, 번호 생성의 실제 조합 만들기를 각 화면에서 구분
+- 실제 당첨번호 S점수·순위 분포를 독립 메뉴에서 확인하고 같은 후보 수와 과거 중앙 50% 순위 구간을 번호 생성으로 전달
+- 기존 11개 자동 생성 방식, 수동 번호, 조건 설정, 상세 근거, 저장·QR·백업·전수검사 기능을 유지하는 화면 재구성
+- 상세 기능지도와 이전/이후 위치 비교: 비공개 소스 저장소의 docs/UI_GUIDE_WINDOWS_9.8.7.md
+
+WINDOWS 9.8.6 UPDATE
+- 1001회부터 최신 회차까지 실제 당첨번호를 회차 직전 데이터만으로 채점하고, 회차마다 최대 100,000개 비교표본 안의 위치를 누수 없이 순차검증
+- 1,200개·10,000개·100,000개 비교 중 하나를 선택하고 실제 당첨번호 1개를 같은 회차의 동일확률 대조 조합과 함께 채점해 점수·순위 분포를 확인
+- 점수대별 실제 평균·중앙 순위, 회차별 순위·20회 이동평균, 상위 구간 포착률과 전체 CSV 제공
+- 번호 생성에서 후보 수를 고른 뒤 상위 N위·과거 당첨번호 중앙 50%·직접 지정한 시작~끝 순위 구간 중 하나를 선택
+- 넓은 순위 구간에서는 최대 30게임을 구간 전체에 고르게 나눠 선택하고 각 번호의 실제 후보풀 순위를 표시
+- `분석`은 점수 기준 이해, `과거 모의검증`은 과거 성능·실제 당첨번호 위치 확인, `번호 생성`은 선택한 기준의 번호 생성으로 화면 역할 정리
+- 점수와 후보풀 순위는 과거·이론 데이터의 설명 위치이며 미래 당첨확률 순위가 아님을 명확히 표시
+
+MOBILE APP 9.9.4 (BUILD 994)
 - Google Play 표시 이름: 육사오 데이터랩
 - Android 패키지 이름: com.hwanhonglee.lottoanalyzer
 - 개인정보처리방침: 공개 저장소의 PRIVACY.md
@@ -11,7 +37,9 @@ MOBILE APP 9.8.3
 완성 제품을 제공합니다. Flutter 모바일 소스는 비공개 LottoAnalyzer-Source
 저장소에서 별도로 관리합니다.
 
-MOBILE 9.8.3 UPDATE
+MOBILE 9.9.0 UPDATE
+- Windows와 같은 1~3등 이론 커버리지, 범위 효율, 목표 기준값 비교를 일반·점수 순위 생성 결과에 추가
+- Android와 iOS가 동일한 Flutter 계산 코드와 검증 자료를 사용
 - 둥근 카드·알약형 메뉴와 파스텔 색상으로 Windows·Android·iOS 화면을 통일
 - 분석·번호 생성·과거 모의검증·내 번호/QR의 핵심 동선을 더 또렷하게 정리
 - 작은 화면과 큰 글자 환경에서도 메뉴와 결과를 읽기 쉽도록 반응형 화면을 개선
@@ -26,7 +54,25 @@ MOBILE 9.8.2 UPDATE
 DEVELOPER
 - Name: 이환홍
 - Email: hwanhong57@gmail.com
-- Version: 9.8.3
+- Windows Version: 9.9.4
+- Mobile Version: 9.9.4 (Build 994)
+
+NEW IN WINDOWS V9.9.0
+- Calculate the exact first-to-third-prize union coverage of each generated batch for up to 100 lines
+- Compare overlap-aware coverage efficiency with the same-count distinct-random baseline
+- Show educational target line counts and simple 1,000-won-per-line conversions without presenting them as purchase advice
+- Organize score explanations, model validation, actual-winner score distributions, and number creation into distinct views
+- Connect historical winning-number rank distributions to generation with the same candidate count and historical middle-50-percent rank band
+- Preserve all 11 automatic generation methods, manual entry, conditions, explanations, local saving, QR import, backup, and exhaustive research
+- See docs/UI_GUIDE_WINDOWS_9.8.7.md in the private source repository for the feature map and old-to-new locations
+
+NEW IN WINDOWS V9.8.6
+- Run a leakage-free sequential audit from draw 1001 through the latest draw with 1,200, 10,000, or 100,000 comparison items per draw; the largest run scores the actual winner against 99,999 uniform controls
+- Compare observed winning-number score and rank distributions with uniform-control expectations, trends, capture rates, and CSV details
+- Generate up to 30 lines from the top N, the historical middle 50 percent, or a custom start-to-end rank band in a selected candidate pool
+- Spread selections across wide rank bands and show every generated line's actual sampled-pool rank
+- Separate screen roles: understand scores in Analysis, validate past performance and winning-number positions in Historical Validation, and create lines in Number Generation
+- State clearly that score and sampled-pool rank describe historical/theoretical fit, not future winning probability
 
 NEW IN V9.8.3
 - Refresh Windows, Android, and iOS with rounded cards, pill navigation, and a soft pastel palette
