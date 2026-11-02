@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>육사오 데이터랩 9.9.7 · 실제 화면 둘러보기</title>
+<style>
+:root{color-scheme:light;--ink:#233e38;--muted:#5b7069;--line:#dce4dc;--mint:#236f64;--page:#f7f7f0;--card:#fffefb}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:16px/1.7 "Malgun Gothic","Noto Sans KR",sans-serif}main{max-width:1360px;margin:auto;padding:36px 24px 60px}h1{font-size:clamp(26px,4vw,40px);line-height:1.4;margin:8px 0 12px}h2{font-size:23px;margin:32px 0 12px}p{margin:0 0 12px}.eyebrow{color:var(--mint);font-weight:800}.lead{font-size:18px;max-width:850px}.muted,figcaption{color:var(--muted)}.menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}.menu div{border:1px solid var(--line);border-radius:20px;padding:18px;background:var(--card)}.menu strong{display:block;font-size:18px}.menu span{display:block;color:var(--muted);font-size:14px;margin-top:5px}.route{padding:18px 22px;background:#e6f1e9;border-radius:20px;margin:20px 0}.filters{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}button,a{font:inherit}button{cursor:pointer;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink);padding:10px 20px}button[aria-pressed="true"]{background:var(--mint);color:white;border-color:var(--mint)}button:focus-visible,a:focus-visible{outline:3px solid #d7862d;outline-offset:4px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}figure{margin:0;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:24px;min-width:0;overflow:hidden}figure[hidden]{display:none}.tag{font-size:12px;font-weight:800;color:var(--mint);background:#e7f4ec;padding:3px 10px;border-radius:20px}.title{font-size:19px;font-weight:800;display:block;margin:8px 0}.shot{display:block;width:100%;height:430px;border:0;border-radius:15px;background:#eeeee6;object-fit:contain;object-position:top}.open{display:block;text-decoration:none;color:inherit}.open:hover .title{text-decoration:underline}figcaption{font-size:14px;margin-top:12px}.note{padding:18px 20px;border:1px solid var(--line);border-radius:18px;margin-top:28px;background:#fffefb}.links{display:flex;flex-wrap:wrap;gap:16px}.links a{color:var(--mint);font-weight:700}footer{color:var(--muted);font-size:13px;margin-top:20px}@media(max-width:960px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.menu{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){main{padding:24px 16px}.grid,.menu{grid-template-columns:1fr}.shot{height:520px}.lead{font-size:16px}}
+</style>
+</head>
+<body><main>
+<p class="eyebrow">육사오 데이터랩 · 9.9.7</p>
+<h1>새 버전 화면 둘러보기</h1>
+<p class="lead">기존 메뉴부터 새 점수 비교·최종 10줄/30줄 검증·사전 기록까지 살펴보세요. 이미지를 누르면 원본 크기로 열립니다.</p>
+<p class="muted">현재 앱 코드와 1248회까지의 공개 데이터로 렌더링한 모바일 공통 화면입니다. Android·iOS 실기기 촬영 사진은 아닙니다. PC는 아래 메뉴 구성을 공유하며 화면 배치는 다릅니다.</p>
+<div class="menu" aria-label="PC와 모바일 기능 구성">
+<div><strong>🏠 홈</strong><span>최신 당첨번호와 주요 화면 바로가기</span></div>
+<div><strong>📊 분석</strong><span>번호 흐름·조합 구조·점수 기준·과거 회차</span></div>
+<div><strong>🎲 번호 생성</strong><span>자동·수동·점수 순위·분포/추세 방식</span></div>
+<div><strong>🧪 과거 모의검증</strong><span>모델 성능·당첨번호 점수와 순위·고급 연구</span></div>
+<div><strong>⭐ 내 번호·QR</strong><span>저장 목록·QR 가져오기·과거 결과 대조</span></div>
+<div><strong>⚙️ 설정·정보</strong><span>접근성·데이터 관리·보안·프로그램 정보</span></div>
+</div>
+<div class="route"><strong>이번 새 기능 위치</strong><br>모바일: 생성 → 분포·추세로 생성<br>PC: 번호 생성 → 자동 생성 → 전체 데이터 점수 우선 → 전체 분포로 생성 / 시작 회차 추세로 생성</div>
+<h2>실제 화면 이미지</h2>
+<div class="filters" aria-label="화면 필터">
+<button type="button" data-filter="all" aria-pressed="true">전체 화면</button>
+<button type="button" data-filter="new" aria-pressed="false">이번에 추가·개선한 화면</button>
+<button type="button" data-filter="basic" aria-pressed="false">기본 메뉴</button>
+</div>
+<div class="grid">
+<figure data-kind="new"><span class="tag">새 기능</span><a class="open" href="mobile/01_mobile_generation_modes.png" target="_blank" rel="noopener"><span class="title">분포·추세 방식 선택</span><img class="shot" src="mobile/01_mobile_generation_modes.png" alt="앱 내 번호 생성 화면에서 전체 분포와 추세 방식을 선택하는 화면"></a><figcaption>앱 메뉴 안에서 새 기능으로 들어가는 위치와 시작 회차 설정을 확인합니다.</figcaption></figure>
+<figure data-kind="new"><span class="tag">새 기능</span><a class="open" href="mobile/02_mobile_score_summary.png" target="_blank" rel="noopener"><span class="title">점수 구간과 무작위 기준</span><img class="shot" src="mobile/02_mobile_score_summary.png" alt="같은 모델의 균등 평균 중앙점수와 구간 비중을 함께 보여주는 실제 요약 카드"></a><figcaption>생성할 점수대와 같은 모델의 무작위 평균·중앙값·구간 비중을 함께 봅니다.</figcaption></figure>
+<figure data-kind="new"><span class="tag">새 기능</span><a class="open" href="mobile/03_mobile_historical_30lines.png" target="_blank" rel="noopener"><span class="title">최종 30줄 실제 성적 비교</span><img class="shot" src="mobile/03_mobile_historical_30lines.png" alt="실제 과거 데이터를 순차 검증한 최종 30줄과 무작위 30줄의 비교 결과"></a><figcaption>10줄 또는 30줄을 선택해 구간 포함률과 실제 일치·당첨 등수·중복을 구분합니다. 현재 자료로 계산한 과거 검증입니다.</figcaption></figure>
+<figure data-kind="new"><span class="tag">새 기능</span><a class="open" href="mobile/04_mobile_locked_record.png" target="_blank" rel="noopener"><span class="title">추첨 전 고정한 번호</span><img class="shot" src="mobile/04_mobile_locked_record.png" alt="목표 회차와 실제 번호를 고정한 유효한 로컬 사전 기록 화면"></a><figcaption>목표 회차·고정 번호를 먼저 보여주고 기술 정보는 접어둡니다. 촬영용 예시이며 기기 시각 기준 로컬 기록입니다.</figcaption></figure>
+<figure data-kind="basic"><a class="open" href="mobile/01-home.png" target="_blank" rel="noopener"><span class="title">홈</span><img class="shot" src="mobile/01-home.png" alt="최신 당첨번호와 메뉴 바로가기가 있는 홈 화면"></a><figcaption>최신 당첨번호와 저장 번호 상태, 분석·생성 바로가기를 확인합니다.</figcaption></figure>
+<figure data-kind="basic"><a class="open" href="mobile/02-analysis.png" target="_blank" rel="noopener"><span class="title">분석</span><img class="shot" src="mobile/02-analysis.png" alt="번호 흐름과 조합 구조 등을 선택하는 분석 화면"></a><figcaption>번호별 빈도·조합 구조·점수 기준과 과거 회차를 살펴봅니다.</figcaption></figure>
+<figure data-kind="basic"><a class="open" href="mobile/03-generator.png" target="_blank" rel="noopener"><span class="title">번호 생성</span><img class="shot" src="mobile/03-generator.png" alt="번호 생성 방식과 조건을 선택하는 화면"></a><figcaption>일반 생성·수동 선택·점수 순위·분포/추세 중 필요한 방식을 고릅니다.</figcaption></figure>
+<figure data-kind="basic"><a class="open" href="mobile/04-simulation.png" target="_blank" rel="noopener"><span class="title">과거 모의검증</span><img class="shot" src="mobile/04-simulation.png" alt="모델 성능과 실제 당첨번호 점수 순위를 검증하는 화면"></a><figcaption>기존 모델 성능 비교와 당첨번호 점수·순위 검증을 유지합니다.</figcaption></figure>
+<figure data-kind="basic"><a class="open" href="mobile/05-my-numbers.png" target="_blank" rel="noopener"><span class="title">내 번호</span><img class="shot" src="mobile/05-my-numbers.png" alt="촬영용 예시 번호를 저장해 보여주는 내 번호 화면"></a><figcaption>저장 번호와 회차별 당첨 여부를 확인합니다. 화면의 번호는 촬영용 테스트 자료입니다.</figcaption></figure>
+<figure data-kind="basic"><a class="open" href="mobile/06-qr.png" target="_blank" rel="noopener"><span class="title">QR 가져오기</span><img class="shot" src="mobile/06-qr.png" alt="QR 촬영과 주소 직접 입력을 고를 수 있는 QR 가져오기 화면"></a><figcaption>QR을 읽거나 주소를 입력해 회차와 번호를 가져옵니다.</figcaption></figure>
+<figure data-kind="basic"><a class="open" href="mobile/07-settings.png" target="_blank" rel="noopener"><span class="title">설정·정보</span><img class="shot" src="mobile/07-settings.png" alt="접근성 설정과 데이터 관리 등 앱 설정 화면"></a><figcaption>글자 접근성·데이터 관리·프로그램 정보를 확인합니다.</figcaption></figure>
+</div>
+<div class="note"><strong>읽는 방법</strong><p>기본 글씨 크기를 임의로 키운 화면이 아닙니다. 긴 설명과 기술 값은 필요한 때 펼칩니다. 점수는 적합도이며 당첨확률이 아니고, 과거 검증과 추첨 전에 고정한 기록은 구분합니다.</p><div class="links"><a href="../../README.txt">사용 안내 문서</a><a href="../../LottoAnalyzer.exe">Windows 실행 파일</a></div></div>
+<footer>렌더링 기준: 육사오 데이터랩 9.9.7 · 2026-11-02 · 공개 당첨자료 1~1248회 · 저장 번호와 고정 기록은 촬영용 예시. 실제 사용자 저장소는 사용하지 않았습니다.</footer>
+</main>
+<script>
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));document.querySelectorAll('figure[data-kind]').forEach(card=>card.hidden=filter!=='all'&&card.dataset.kind!==filter)}));
+</script>
+</body></html>
